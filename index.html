@@ -1,139 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My E-Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Professional Portfolio</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-color: #f4f6f9;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    header {
+        background: #0a3d62;
+        color: white;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    header h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+        background-color: #1e5f8b;
+    }
+
+    section {
+        background: white;
+        margin: 25px auto;
+        width: 90%;
+        max-width: 1200px;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    }
+
+    h2 {
+        color: #0a3d62;
+        margin-bottom: 15px;
+    }
+
+    .profile {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .profile img {
+        width: 220px;
+        border-radius: 10px;
+        border: 3px solid #0a3d62;
+    }
+
+    .artifact {
+        margin-top: 15px;
+        padding: 15px;
+        background: #f8f9fb;
+        border-left: 5px solid #0a3d62;
+    }
+
+    .artifact img {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 10px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+
+    .reflection {
+        margin-top: 15px;
+    }
+
+    footer {
+        text-align: center;
+        background: #0a3d62;
+        color: white;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .button-link {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 15px;
+        background: #0a3d62;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .button-link:hover {
+        background: #1e5f8b;
+    }
+</style>
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+
+<header>
+    <h1>IT Professional Portfolio</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#module1">Module 1</a></li>
+            <li><a href="#module2">Module 2</a></li>
+            <li><a href="#module3">Module 3</a></li>
+            <li><a href="#module4">Module 4</a></li>
+            <li><a href="#module5">Module 5</a></li>
+            <li><a href="#module6">Module 6</a></li>
+            <li><a href="#module7">Module 7</a></li>
+            <li><a href="#module8">Module 8</a></li>
+            <li><a href="#module9">Module 9</a></li>
+            <li><a href="#summary">Master Summary</a></li>
+        </ul>
     </nav>
+</header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Showcasing my projects and skills</p>
-            <a href="#portfolio" class="cta-button">View My Work</a>
+<!-- ABOUT ME -->
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="profile">
+        <img src="images/profile.jpg" alt="Professional Photo">
+
+        <div>
+            <h3>Your Name</h3>
+
+            <p>
+                I am an Information Technology student with a passion for
+                technology, problem-solving, and continuous learning.
+                Throughout this course, I have developed skills in computer
+                hardware, software applications, networking, cybersecurity,
+                and emerging technologies.
+            </p>
+
+            <br>
+
+            <p>
+                My career goal is to become an IT professional specializing
+                in systems administration, cybersecurity, or cloud computing.
+                I hope to use technology to improve business operations,
+                protect digital assets, and support innovation in modern
+                organizations.
+            </p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hi! I'm a developer passionate about creating innovative solutions. This portfolio showcases my best work and demonstrates my skills across various technologies.</p>
-        </div>
-    </section>
+<!-- MODULE TEMPLATE -->
+<section id="module1">
+    <h2>Module 1</h2>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                    <h3>Project One</h3>
-                    <p>Description of your first project. Add details about the technologies used and impact.</p>
-                    <div class="project-links">
-                        <a href="#">View Project</a>
-                        <a href="#">GitHub</a>
-                    </div>
-                </div>
+    <div class="artifact">
+        <h3>Artifact</h3>
+        <p>Insert assignment name and description here.</p>
 
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                    <h3>Project Two</h3>
-                    <p>Description of your second project. Highlight key features and technologies.</p>
-                    <div class="project-links">
-                        <a href="#">View Project</a>
-                        <a href="#">GitHub</a>
-                    </div>
-                </div>
+        <img src="images/module1.jpg" alt="Module 1 Artifact">
 
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                    <h3>Project Three</h3>
-                    <p>Description of your third project. Explain the problem it solved.</p>
-                    <div class="project-links">
-                        <a href="#">View Project</a>
-                        <a href="#">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <br>
+        <a href="#" class="button-link">View Assignment</a>
+    </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                    </ul>
-                </div>
+    <div class="reflection">
+        <h3>Why This Matters</h3>
+        <p>
+            Replace this paragraph with a 3–5 sentence reflection describing
+            the most important concept learned in Module 1 and how it applies
+            in the real world.
+        </p>
+    </div>
+</section>
 
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>REST APIs</li>
-                    </ul>
-                </div>
+<section id="module2">
+    <h2>Module 2</h2>
 
-                <div class="skill-category">
-                    <h3>Tools & Other</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>Docker</li>
-                        <li>GitHub</li>
-                        <li>VS Code</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="artifact">
+        <h3>Artifact</h3>
+        <img src="images/module2.jpg" alt="Module 2 Artifact">
+        <br>
+        <a href="#" class="button-link">View Assignment</a>
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <p>Feel free to reach out! I'm always interested in hearing about new projects and opportunities.</p>
-            <div class="contact-links">
-                <a href="mailto:your.email@example.com" class="contact-button">Email Me</a>
-                <a href="https://github.com/Robotohero" class="contact-button" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/yourprofile" class="contact-button" target="_blank">LinkedIn</a>
-            </div>
-        </div>
-    </section>
+    <div class="reflection">
+        <h3>Why This Matters</h3>
+        <p>Your Module 2 reflection goes here.</p>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 My Portfolio. All rights reserved.</p>
-        </div>
-    </footer>
+<section id="module3">
+    <h2>Module 3</h2>
 
-    <script src="script.js"></script>
+    <div class="artifact">
+        <h3>Artifact</h3>
+        <img src="images/module3.jpg" alt="Module 3 Artifact">
+        <br>
+        <a href="#" class="button-link">View Assignment</a>
+    </div>
+
+    <div class="reflection">
+        <h3>Why This Matters</h3>
+        <p>Your Module 3 reflection goes here.</p>
+    </div>
+</section>
+
+<section id="module4">
+    <h2>Module 4</h2>
+
+    <div class="artifact">
+        <h3>Artifact</h3>
+        <img src="images/module4.jpg" alt="Module 4 Artifact">
+        <br>
+        <a href="#" class="button-link">View Assignment</a>
+    </div>
+
+    <div class="reflection">
+        <h3>Why This Matters</h3>
+        <p>Your Module 4 reflection goes here.</p>
+    </div>
+</section>
+
+<section id="module5">
+    <h2>Module 5</h2>
+
+    <div class="artifact">
+        <h3>Artifact</h3>
+        <img src="images/module5.jpg" alt="Module 5 Artifact">
+        <br>
+        <a href="#" class="button-link">View Assignment</a>
+    </div>
+
+    <div class="reflection">
+        <h3>Why This Matters</h3>
+        <p>Your Module 5 reflection goes here.</p>
+    </div>
+</section>
+
+<section id="module6">
+    <h2>Module 6</h2>
+
+    <div class="artifact">
+        <h3>Artifact</h3>
+        <img src="images/module6.jpg" alt="Module 6 Artifact">
+        <br>
+        <a href="#" class="button-link">View Assignment</a>
+    </div>
+
+    <div class="reflection">
+        <h3>Why This Matters</h3>
+        <p>Your Module 6 reflection goes here.</p>
+    </div>
+</section>
+
+<section id="module7">
+    <h2>Module 7</h2>
+
+    <div class="artifact">
+        <h3>Artifact</h3>
+        <img src="images/module7.jpg" alt="Module 7 Artifact">
+        <br>
+        <a href="#" class="button-link">View Assignment</a>
+    </div>
+
+    <div class="reflection">
+        <h3>Why This Matters</h3>
+        <p>Your Module 7 reflection goes here.</p>
+    </div>
+</section>
+
+<section id="module8">
+    <h2>Module 8</h2>
+
+    <div class="artifact">
+        <h3>Artifact</h3>
+        <img src="images/module8.jpg" alt="Module 8 Artifact">
+        <br>
+        <a href="#" class="button-link">View Assignment</a>
+    </div>
+
+    <div class="reflection">
+        <h3>Why This Matters</h3>
+        <p>Your Module 8 reflection goes here.</p>
+    </div>
+</section>
+
+<section id="module9">
+    <h2>Module 9</h2>
+
+    <div class="artifact">
+        <h3>Artifact</h3>
+        <img src="images/module9.jpg" alt="Module 9 Artifact">
+        <br>
+        <a href="#" class="button-link">View Assignment</a>
+    </div>
+
+    <div class="reflection">
+        <h3>Why This Matters</h3>
+        <p>Your Module 9 reflection goes here.</p>
+    </div>
+</section>
+
+<!-- MASTER SUMMARY -->
+<section id="summary">
+    <h2>Master Summary</h2>
+
+    <p>
+        Throughout this course, the nine modules demonstrated how different
+        areas of Information Technology work together to create complete
+        technology solutions. Beginning with foundational concepts, each
+        module built upon previous knowledge to develop a broader
+        understanding of modern IT systems. Hardware components provide the
+        physical foundation that allows software applications to function
+        effectively. Without properly selected hardware, software
+        performance and reliability would be limited.
+    </p>
+
+    <br>
+
+    <p>
+        Networking concepts connect devices and systems, allowing users to
+        communicate and share resources efficiently. Operating systems and
+        software applications rely on both hardware resources and network
+        connectivity to deliver services. Database technologies support data
+        storage and retrieval, enabling organizations to make informed
+        decisions using accurate information. Emerging technologies such as
+        artificial intelligence demonstrate how software can leverage data
+        and computing power to solve complex problems.
+    </p>
+
+    <br>
+
+    <p>
+        Module 7's hardware specifications directly support the software
+        requirements explored in earlier modules. Faster processors,
+        sufficient memory, and reliable storage improve application
+        performance and user productivity. At the same time, cybersecurity
+        principles introduced in Module 9 protect the systems, networks, and
+        data used throughout all other areas of IT. Security measures such
+        as encryption, access controls, and threat monitoring ensure that
+        hardware, software, and data remain protected from unauthorized
+        access.
+    </p>
+
+    <br>
+
+    <p>
+        Together, these modules illustrate that Information Technology is an
+        interconnected field where hardware, software, networking, data
+        management, emerging technologies, and cybersecurity must work
+        together. Understanding these relationships enables IT professionals
+        to design, implement, and maintain reliable technology solutions
+        that support organizational goals and meet user needs.
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Your Name | IT Professional Portfolio</p>
+</footer>
+
 </body>
 </html>
